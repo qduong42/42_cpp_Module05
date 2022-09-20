@@ -30,11 +30,13 @@ class Form
 			public:
 			virtual const char* what()const throw();
 		};
-		std::string const getName()const;
+
+		std::string getName()const; // better string const return or not?
 		bool getIsSigned()const;
 		int getSignGrade()const;
 		int getExeGrade()const;
 		void beSigned(Bureaucrat const& b);
+
 	private:
 
 		std::string const _name;
