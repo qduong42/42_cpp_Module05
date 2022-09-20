@@ -8,7 +8,7 @@ int main()
 	// Form *t = NULL;
 	try
 	{
-		/* t = new  */Form Tom("Tom", false, 120, 30);
+		/* t = new  */Form Tom("Tom", 120, 30);
 		Bureaucrat a(1, "Dim Cheaty");
 		a.signForm(Tom);
 		// std::cout << Tom;

@@ -9,8 +9,8 @@ Form::Form(): _name("standard"), _isSigned(false), _signGrade(0), _exeGrade(0)
 		std::cout << C_GREY << "Form default constructed" C_DEF << std::endl;
 }
 
-Form::Form(std::string const& name, bool const& isSigned, int const& signGrade,
-int const& exeGrade): _name(name), _isSigned(isSigned), _signGrade(signGrade), _exeGrade(exeGrade)
+Form::Form(std::string const& name, int const& signGrade,
+int const& exeGrade): _name(name), _isSigned(false), _signGrade(signGrade), _exeGrade(exeGrade)
 {
 	if (DEBUG)
 		std::cout << C_GREY << "Form explicit constructed" C_DEF << std::endl;
