@@ -6,11 +6,11 @@
 #    By: qduong <qduong@students.42wolfsburg.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/17 17:27:44 by qduong            #+#    #+#              #
-#    Updated: 2022/09/20 17:16:59 by qduong           ###   ########.fr        #
+#    Updated: 2022/09/21 13:45:28 by qduong           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME := ex01.bi
+NAME := ex02.bi
 
 CC := c++
 
@@ -18,7 +18,7 @@ RM := rm -rf
 
 CFLAGS := -Wall -Wextra -Werror -std=c++98 -g3
 
-SRCS := main.cpp Bureaucrat.cpp AForm.cpp PresidentialPardonForm.cpp
+SRCS := main.cpp Bureaucrat.cpp AForm.cpp PresidentialPardonForm.cpp ShrubberyCreationForm.cpp
 
 HEADER = *.hpp
 
@@ -56,7 +56,7 @@ clean:
 	$(RM) *.dSYM
 
 fclean:clean
-	$(RM) $(NAME) test wrong main debug.bi
+	$(RM) $(NAME) test wrong main *.bi *_shrubbery
 
 re:	fclean all
 

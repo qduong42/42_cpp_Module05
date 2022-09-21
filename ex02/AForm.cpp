@@ -105,6 +105,11 @@ const char* AForm::GradeTooLowException::what()const throw()
 	return ("Bureaucrat AForm Too Low for Bureaucrat to sign!");
 }
 
+const char* AForm::GradeTooHighException::what()const throw()
+{
+	return ("Form Too High for Bureaucrat to sign!");
+}
+
 const char* AForm::InsufficientGradeException::what()const throw()
 {
 	return ("Bureaucrat Grade Insufficient!");

@@ -1,6 +1,7 @@
 #include "colors.hpp"
 #include "AForm.hpp"
 #include "Bureaucrat.hpp"
+#include "ShrubberyCreationForm.hpp"
 #include "PresidentialPardonForm.hpp"
 
 int main()
@@ -9,9 +10,9 @@ int main()
 	AForm *t = NULL;
 	try
 	{
-		t = new PresidentialPardonForm("Tom");
+		t = new ShrubberyCreationForm("Tom");
 		Bureaucrat b(10, "James");
-		b.signAForm(*t);
+		b.signForm(*t);
 	}
 	catch(std::exception& e)
 	{

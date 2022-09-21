@@ -1,20 +1,22 @@
-#ifndef SHRUBBERYCREATIONFORM_HPP
-#define SHRUBBERYCREATIONFORM_HPP
+#ifndef ShrubberyCreationForm_HPP
+#define ShrubberyCreationForm_HPP
 
 #include <iostream>
+#include <fstream>  
+
 #include "AForm.hpp"
 
-class ShrubberyCreationForm
+class ShrubberyCreationForm : public AForm
 {
 	public:
 
 		ShrubberyCreationForm();
+		ShrubberyCreationForm(std::string target);
 		ShrubberyCreationForm(ShrubberyCreationForm const& obj);
 		ShrubberyCreationForm& operator=(ShrubberyCreationForm const& obj);
 		~ShrubberyCreationForm();
 
-	private:
-
+		virtual void beSigned(Bureaucrat const& b);
 
 };
 
