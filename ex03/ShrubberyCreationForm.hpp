@@ -17,7 +17,7 @@ class ShrubberyCreationForm : public AForm
 		~ShrubberyCreationForm();
 
 		virtual void beSigned(Bureaucrat const& b);
-
+		virtual AForm* clone() const;
 };
 
 #endif

@@ -2,7 +2,7 @@
 
 //	CONSTRUCTORS | DESTRUCTOR
 
-ShrubberyCreationForm::ShrubberyCreationForm()
+ShrubberyCreationForm::ShrubberyCreationForm(): AForm("unknown", 145, 137)
 {
 	if (DEBUG)
 		std::cout << C_GREY << "ShrubberyCreationForm default constructed" C_DEF << std::endl;
@@ -82,4 +82,9 @@ outfile << "                     ,,  .. ,,..,.,,,.,, ,..,....*    . ,. ,,       
 		<< "               .       ..  ,,,,.,*/****(**/#/#(%#((((%(#&%@@@&&%%/*/   . ..     " << std::endl
 		<< "          .         .,(((##(.,,,**,*,,,*(///*/,*(/&*#/,,,/***&/(&(*,//...     .." << std::endl;
 outfile.close();
+}
+
+AForm* ShrubberyCreationForm::clone() const
+{
+	return new ShrubberyCreationForm(this->getName());
 }

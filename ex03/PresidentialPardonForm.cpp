@@ -2,7 +2,7 @@
 
 //	CONSTRUCTORS | DESTRUCTOR
 
-PresidentialPardonForm::PresidentialPardonForm()
+PresidentialPardonForm::PresidentialPardonForm():AForm("unknown", 25, 5)
 {
 	if (DEBUG)
 		std::cout << C_GREY << "PresidentialPardonForm default constructed" C_DEF << std::endl;
@@ -46,4 +46,9 @@ void PresidentialPardonForm::beSigned(Bureaucrat const& b)
 		throw AForm::InsufficientGradeException();
 	}
 	std::cout << this->getName() << " has been pardoned by Zaphod Beeblebrox." << std::endl;
+}
+
+AForm* PresidentialPardonForm::clone() const
+{
+	return new PresidentialPardonForm(this->getName());
 }

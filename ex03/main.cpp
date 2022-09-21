@@ -1,24 +1,21 @@
 #include "colors.hpp"
-#include "AForm.hpp"
-#include "Bureaucrat.hpp"
-#include "ShrubberyCreationForm.hpp"
-#include "PresidentialPardonForm.hpp"
-#include "RobotomyRequestForm.hpp"
+#include "Intern.hpp"
 
-int main()
-{
-	std::cout << C_GREEN << "AForm Tom" << C_DEF << std::endl;
-	AForm *t;
-	t = new RobotomyRequestForm ("Tom");
-	try
-	{
-		Bureaucrat b(150, "James");
-		b.signForm(*t);
-		b.executeForm(*t);
-	}
-	catch(std::exception& e)
-	{
-		std::cerr << e.what() << '\n';
-	}
-		delete t;
+int main() {
+	Bureaucrat bob(1, "Bob");
+	Intern intern;
+	AForm *f1 = intern.makeForm("presidential pardon", "Michael");
+	AForm *f2 = intern.makeForm("robotomy request", "Coding");
+	AForm *f3 = intern.makeForm("shrubbery creation", "Home");
+
+	std::cout << *f1 << std::endl;
+	std::cout << *f2 << std::endl;
+	std::cout << *f3 << std::endl;
+	bob.signForm(*f1);
+	bob.signForm(*f2);
+	bob.signForm(*f3);
+	bob.executeForm(*f1);
+	bob.executeForm(*f2);
+	bob.executeForm(*f3);
+	return 0;
 }

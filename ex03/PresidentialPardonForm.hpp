@@ -15,7 +15,7 @@ class PresidentialPardonForm : public AForm
 		~PresidentialPardonForm();
 
 		virtual void beSigned(Bureaucrat const& b);
-
+		virtual AForm* clone() const;
 };
 
 #endif

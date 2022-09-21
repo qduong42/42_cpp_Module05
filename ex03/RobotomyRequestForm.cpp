@@ -54,3 +54,8 @@ void RobotomyRequestForm::beSigned(Bureaucrat const& b)
 	else
 		std::cout << "Robotomy has failed successfully" << std::endl;
 }
+
+AForm* RobotomyRequestForm::clone() const
+{
+	return new RobotomyRequestForm(this->getName());
+}
