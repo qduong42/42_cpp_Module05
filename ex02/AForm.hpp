@@ -40,6 +40,8 @@ class AForm
 		int getSignGrade()const;
 		int getExeGrade()const;
 		virtual void beSigned(Bureaucrat const& b) = 0;
+		void execute(Bureaucrat const& executor)const;
+
 
 	private:
 

@@ -12,8 +12,9 @@ int main()
 	t = new RobotomyRequestForm ("Tom");
 	try
 	{
-		Bureaucrat b(1, "James");
+		Bureaucrat b(150, "James");
 		b.signForm(*t);
+		b.executeForm(*t);
 	}
 	catch(std::exception& e)
 	{

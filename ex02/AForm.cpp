@@ -100,6 +100,13 @@ void AForm::beSigned(Bureaucrat const& b)
 	this->_isSigned = true;
 }
 
+void AForm::execute(Bureaucrat const& executor)const
+{
+	if (executor.getGrade() > this->getExeGrade())
+		throw InsufficientGradeException();
+	std::cout << executor.getName() << " executed " << this->getName() << std::endl;
+}
+
 const char* AForm::GradeTooLowException::what()const throw()
 {
 	return ("Bureaucrat AForm Too Low for Bureaucrat to sign!");

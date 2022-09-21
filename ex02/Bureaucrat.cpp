@@ -82,6 +82,17 @@ void Bureaucrat::decreaseGrade() {
 	this->_grade++;
 }
 
+void Bureaucrat::executeForm(AForm const& AForm)const
+{
+	try{
+		AForm.execute(*this);
+	}
+	catch(std::exception &e)
+	{
+		std::cout << e.what() << std::endl;
+	}
+}
+
 const char* Bureaucrat::GradeTooHighException::what() const throw() {
 	return "Bureaucrat's grade is too high!";
 }
