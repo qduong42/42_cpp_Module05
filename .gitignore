@@ -1,0 +1,8 @@
+*.dSYM
+*.o
+*.png
+.vscode/
+*.pdf
+a.out
+*.bi
+*.jpeg

@@ -23,9 +23,9 @@ PresidentialPardonForm::PresidentialPardonForm(PresidentialPardonForm const& obj
 
 PresidentialPardonForm& PresidentialPardonForm::operator=(PresidentialPardonForm const& obj)
 {
+	(void) obj;
 	if (DEBUG)
 		std::cout << C_GREY << "PresidentialPardonForm = operator overload" C_DEF << std::endl;
-		(void) obj;
 	return (*this);
 }
 

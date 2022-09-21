@@ -25,9 +25,9 @@ RobotomyRequestForm::RobotomyRequestForm(RobotomyRequestForm const& obj) : AForm
 
 RobotomyRequestForm& RobotomyRequestForm::operator=(RobotomyRequestForm const& obj)
 {
+	(void) obj;
 	if (DEBUG)
 		std::cout << C_GREY << "RobotomyRequestForm = operator overload" C_DEF << std::endl;
-		(void) obj;
 	return (*this);
 }
 
@@ -48,7 +48,7 @@ void RobotomyRequestForm::beSigned(Bureaucrat const& b)
 		throw AForm::InsufficientGradeException();
 	}
 	std::cout << "BRRRRRRR!" << std::endl;
-	std::srand(std::time(NULL)); // use current time as seed for random generator
+	std::srand(time(NULL)); // use current time as seed for random generator
 	if (std::rand() % 2)
 		std::cout << this->getName() << "has been robotomized successfully" << std::endl;
 	else

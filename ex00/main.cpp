@@ -4,16 +4,21 @@
 int main()
 {
 	std::cout << C_GREEN << "Bureaucrat Tom" << std::endl;
-	Bureaucrat *t;
+	Bureaucrat *t = NULL;
 	try
 	{
 		t = new Bureaucrat(150, "Tom");
 	}
 	catch(std::exception& e)
 	{
+		if (t)
+		{
+			delete t;
+			t = NULL;
+		}
 		std::cerr << e.what() << '\n';
 	}
-	std::cout << "t grade: " << t->getGrade() << " t name: " << t->getName() << std::endl;
+	std::cout << *t;
 	std::cout << C_GREEN << "Increasing grade from 150" << C_DEF << std::endl;
 	try
 	{
@@ -32,4 +37,6 @@ int main()
 	{
 		std::cerr << e.what() << '\n';
 	}
+	if (t)
+		delete t;
 }

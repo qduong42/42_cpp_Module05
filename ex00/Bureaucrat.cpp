@@ -48,11 +48,11 @@ Bureaucrat::~Bureaucrat()
 //	MEMBER FUNCTIONS
 
 const std::string& Bureaucrat::getName() const {
-	return this->_name;
+	return (this->_name);
 }
 
 int Bureaucrat::getGrade() const {
-	return this->_grade;
+	return (this->_grade);
 }
 
 void Bureaucrat::increaseGrade() {

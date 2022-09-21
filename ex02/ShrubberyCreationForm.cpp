@@ -2,7 +2,7 @@
 
 //	CONSTRUCTORS | DESTRUCTOR
 
-ShrubberyCreationForm::ShrubberyCreationForm()
+ShrubberyCreationForm::ShrubberyCreationForm():AForm("unknown", 145, 137)
 {
 	if (DEBUG)
 		std::cout << C_GREY << "ShrubberyCreationForm default constructed" C_DEF << std::endl;
@@ -23,9 +23,9 @@ ShrubberyCreationForm::ShrubberyCreationForm(ShrubberyCreationForm const& obj) :
 
 ShrubberyCreationForm& ShrubberyCreationForm::operator=(ShrubberyCreationForm const& obj)
 {
+	(void) obj;
 	if (DEBUG)
 		std::cout << C_GREY << "ShrubberyCreationForm = operator overload" C_DEF << std::endl;
-		(void) obj;
 	return (*this);
 }
 
