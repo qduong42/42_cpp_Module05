@@ -6,7 +6,7 @@
 #    By: qduong <qduong@students.42wolfsburg.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/17 17:27:44 by qduong            #+#    #+#              #
-#    Updated: 2022/09/21 13:45:28 by qduong           ###   ########.fr        #
+#    Updated: 2022/09/21 14:08:06 by qduong           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ RM := rm -rf
 
 CFLAGS := -Wall -Wextra -Werror -std=c++98 -g3
 
-SRCS := main.cpp Bureaucrat.cpp AForm.cpp PresidentialPardonForm.cpp ShrubberyCreationForm.cpp
+SRCS := main.cpp Bureaucrat.cpp AForm.cpp PresidentialPardonForm.cpp ShrubberyCreationForm.cpp RobotomyRequestForm.cpp
 
 HEADER = *.hpp
 
