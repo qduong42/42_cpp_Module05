@@ -11,7 +11,7 @@ int main()
 		/* t = new  */Form Tom("Tom", 120, 30);
 		Bureaucrat a(1, "Dim Cheaty");
 		a.signForm(Tom);
-		// std::cout << Tom;
+		std::cout << Tom;
 	}
 	catch(std::exception& e)
 	{
