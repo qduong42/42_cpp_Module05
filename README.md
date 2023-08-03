@@ -20,11 +20,11 @@ Those versions are the ones used during development.
 
         git clone https://github.com/qduong42/42_cpp_Module05
 2. `cd` into the exercise directories and run `make`
-  for (int i = 00; i <= 03; i++)
+   `for (int i = 00; i <= 03; i++)
 {
         cd 42_cpp_Module05/exi
         make
-}
+}`
 
 ### Running the program
 
