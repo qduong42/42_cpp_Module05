@@ -17,5 +17,8 @@ int main() {
 	bob.executeForm(*f1);
 	bob.executeForm(*f2);
 	bob.executeForm(*f3);
+	delete f1;
+	delete f2;
+	delete f3;
 	return 0;
 }

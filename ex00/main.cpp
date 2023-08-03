@@ -22,11 +22,11 @@ int main()
 	std::cout << C_GREEN << "Increasing grade from 150" << C_DEF << std::endl;
 	try
 	{
-		t->increaseGrade();
+		t->decreaseGrade(); //why doesnt this print?
 	}
 	catch(const std::exception& e)
 	{
-		std::cerr << e.what() << '\n';
+		std::cerr << e.what() << '\n'; //why doesnt this print?
 	}
 	std::cout << C_GREEN << "Instantiate grade with 151" << C_DEF << std::endl;
 	try

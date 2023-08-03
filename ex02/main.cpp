@@ -9,10 +9,10 @@ int main()
 {
 	std::cout << C_GREEN << "AForm Tom" << C_DEF << std::endl;
 	AForm *t;
-	t = new RobotomyRequestForm ("Tom");
+	t = new ShrubberyCreationForm ("Tom");
 	try
 	{
-		Bureaucrat b(150, "James");
+		Bureaucrat b(1, "James");
 		b.signForm(*t);
 		b.executeForm(*t);
 	}
