@@ -2,6 +2,8 @@
 
 ## About
 
+CPP Module 05 introduced me to Exceptions in CPP. Using Try Catch Blocks and Abstract Classes.
+
 ## Installation & Usage
 
 ### Requirements
@@ -20,7 +22,7 @@ Those versions are the ones used during development.
 2. `cd` into the exercise directories and run `make`
   for (int i = 00; i <= 03; i++)
 {
-        cd 42_cpp_Module00/exi
+        cd 42_cpp_Module05/exi
         make
 }
 
